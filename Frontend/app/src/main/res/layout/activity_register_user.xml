@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bggradient"
+    tools:context=".auth.LoginActivity">
+
+    <ImageButton
+        android:id="@+id/BingrLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="111dp"
+        android:layout_marginTop="-1dp"
+        android:layout_marginEnd="100dp"
+        android:background="@null"
+        android:contentDescription="Bingr"
+        app:srcCompat="@drawable/logo"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="67dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="419dp"
+        android:backgroundTint="#FF5722"
+        android:textColor="#000000"
+        android:text="Register New Account"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/registerPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="145dp"
+        android:layout_marginTop="289dp"
+        android:autofillHints="password"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/passwordLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/registerUsernameLabel"
+        android:layout_alignLeft="@id/registerUsernameLabel"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="303dp"
+        android:labelFor="@id/registerPassword"
+        android:text="@string/password"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/registerEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="145dp"
+        android:layout_marginTop="238dp"
+        android:autofillHints="email"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/RegisterEmailLabel"
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/registerUsernameLabel"
+        android:layout_alignLeft="@id/registerUsernameLabel"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="253dp"
+        android:layout_marginRight="40dp"
+        android:labelFor="@id/registerEmail"
+        android:text="@string/e_mail"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="54dp"
+        tools:layout_editor_absoluteY="208dp" />
+
+    <EditText
+        android:id="@+id/registerConfirmPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="145dp"
+        android:layout_marginTop="342dp"
+        android:autofillHints="password"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/confirmPasswordLabel"
+        android:layout_width="136dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/registerUsernameLabel"
+        android:layout_alignLeft="@id/registerUsernameLabel"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="338dp"
+        android:labelFor="@id/registerConfirmPassword"
+        android:text="@string/confirmPassword"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/registerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="146dp"
+        android:layout_marginTop="139dp"
+        android:ems="10"
+        android:inputType="textPersonName"/>
+
+    <TextView
+        android:id="@+id/registerNameLabel"
+        android:layout_width="136dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/registerUsernameLabel"
+        android:layout_alignLeft="@id/registerUsernameLabel"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="153dp"
+        android:labelFor="@id/registerName"
+        android:text="Name:"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/registerSurnameLabel"
+        android:layout_width="136dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/registerUsernameLabel"
+        android:layout_alignLeft="@id/registerUsernameLabel"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="200dp"
+        android:labelFor="@id/registerSurname"
+        android:text="Last Name:"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/registerUsernameLabel"
+        android:layout_width="136dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="103dp"
+        android:labelFor="@id/registerUsername"
+        android:text="Username:"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/registerSurname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="146dp"
+        android:layout_marginTop="188dp"
+        android:ems="10"
+        android:inputType="textPersonName"/>
+
+    <EditText
+        android:id="@+id/registerUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="145dp"
+        android:layout_marginTop="90dp"
+        android:ems="10"
+        android:inputType="textPersonName"/>
+
+    <TextView
+        android:id="@+id/registerNotifText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="522dp"
+        android:text=""
+        android:textColor="@color/warning" />
+
+
+</RelativeLayout>

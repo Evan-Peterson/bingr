@@ -1,0 +1,2 @@
+﻿Two pages, each with a button to navigate to the other.
+Each page also has a unique image

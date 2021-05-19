@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bggradient"
+    tools:context=".auth.LoginActivity">
+
+    <ImageButton
+        android:id="@+id/BingrLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="94dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="106dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="105dp"
+        android:background="@null"
+        android:contentDescription="Bingr"
+        app:srcCompat="@drawable/logo"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/passwordLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="161dp"
+        android:labelFor="@id/passwordInput"
+        android:text="@string/password"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/emailLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="79dp"
+        android:layout_marginTop="107dp"
+        android:labelFor="@id/emailInput"
+        android:text="@string/e_mail"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="54dp"
+        tools:layout_editor_absoluteY="208dp" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="138dp"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="135dp"
+        android:layout_marginTop="218dp"
+        android:backgroundTint="#FF5722"
+        android:text="Login"
+        app:backgroundTint="#FF5722"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/emailInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="145dp"
+        android:layout_marginTop="96dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:autofillHints="email" />
+
+    <EditText
+        android:id="@+id/passwordInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="145dp"
+        android:layout_marginTop="147dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:autofillHints="password" />
+
+    <TextView
+        android:id="@+id/toRegisterActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="269dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="Register new account..."
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/loginNotifText"
+        android:layout_width="wrap_content"
+        android:textColor="@color/warning"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="311dp"
+        android:text="" />
+
+
+</RelativeLayout>

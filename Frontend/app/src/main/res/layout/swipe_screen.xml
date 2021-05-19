@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SwipeScreen">
+
+
+    <ImageButton
+        android:id="@+id/FilmRoll"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="100dp"
+        android:background="@null"
+        app:layout_constraintEnd_toStartOf="@+id/ChatBubble"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/filmroll" />
+
+    <ImageButton
+        android:id="@+id/UserSymbol"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="100dp"
+        android:background="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ChatBubble"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/usersymbol" />
+
+    <ImageButton
+        android:id="@+id/ChatBubble"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@null"
+        app:layout_constraintEnd_toStartOf="@+id/UserSymbol"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/FilmRoll"
+        app:layout_constraintTop_toBottomOf="@+id/BingrLogo"
+        app:srcCompat="@drawable/chatbubble" />
+
+    <ImageButton
+        android:id="@+id/BingrLogo"
+        android:layout_width="191dp"
+        android:layout_height="102dp"
+        android:background="@null"
+        app:layout_constraintEnd_toStartOf="@+id/UserSymbol"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/FilmRoll"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <ImageButton
+        android:id="@+id/ThumbsUp"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="15dp"
+        android:background="@null"
+        android:contentDescription="Like movie"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ThumbsDown"
+        app:layout_constraintTop_toBottomOf="@+id/swipeScreenPoster"
+        app:srcCompat="@drawable/thumbsup" />
+
+    <ImageButton
+        android:id="@+id/ThumbsDown"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="15dp"
+        android:background="@null"
+        android:contentDescription="Dislike movie"
+        app:layout_constraintEnd_toStartOf="@+id/ThumbsUp"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/swipeScreenPoster"
+        app:srcCompat="@drawable/thumbsdown" />
+
+    <ImageView
+        android:id="@+id/swipeScreenPoster"
+        android:layout_width="395dp"
+        android:layout_height="395dp"
+        app:layout_constraintBottom_toTopOf="@+id/ThumbsUp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FilmRoll"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/swipeScreenError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="137dp"
+        android:layout_marginEnd="177dp"
+        android:layout_marginBottom="48dp"
+        android:textColor="@color/bingr"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/swipeScreenPoster" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

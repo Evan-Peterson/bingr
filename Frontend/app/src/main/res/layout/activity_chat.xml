@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bingr.app.PrivateChat">
+
+    <ImageButton
+        android:id="@+id/BingrLogo"
+        android:layout_width="189dp"
+        android:layout_height="85dp"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:scaleX="0.4"
+        android:scaleY="0.4"
+        app:layout_constraintBottom_toTopOf="@+id/PC_show"
+        app:layout_constraintEnd_toStartOf="@+id/PC_show"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/PC_show"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <ImageButton
+        android:id="@+id/PC_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/abc_vector_test" />
+
+    <TextView
+        android:id="@+id/PC_show"
+        android:layout_width="match_parent"
+        android:layout_height="640dp"
+        android:text=""
+        android:textColor="#000000"
+        android:textIsSelectable="true"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/PC_exit"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/PC_message"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="message"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/PC_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:text="Send"
+        android:textColor="#000000"
+        app:backgroundTint="#FF5722"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

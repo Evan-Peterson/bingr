@@ -1,0 +1,85 @@
+stages:
+    - mavenbuild
+    - maventest
+    - mavendeploy
+    - androidbuild
+    - androidtest
+
+# build springboot backend
+maven-build:
+  stage: mavenbuild
+  tags:
+    - springboot
+  script:
+    - cd Backend
+    - mvn package -B
+  only:
+    changes:
+      - Backend/**/*
+    
+# test backend code
+maven-test:
+    stage: maventest
+    tags:
+      - springboot
+    script:
+      - cd Backend
+      - mvn test
+    artifacts:
+      paths:
+        - Backend/target/*.jar  
+    only:
+      changes:
+        - Backend/**/*
+
+# deploy springboot backend
+autoDeploy:
+  stage: mavendeploy
+  tags:
+    - springboot
+  script:
+    - cd Backend
+    - mvn package
+    - sudo mv target/bingr-1.0.1.jar /target/web-demo.jar
+    - sudo systemctl stop system-web-demo
+    - sudo systemctl start system-web-demo
+  only:
+    refs:
+      - master
+    changes:
+      - Backend/**/*
+    
+# build android frontend
+android-build:
+  image: javiersantos/android-ci:latest
+  stage: androidbuild
+  tags: 
+    - android
+  before_script: 
+    - export GRADLE_USER_HOME='pwd'/.gradle
+    - chmod +x ./Frontend/gradlew
+  script:
+    - cd Frontend
+    - ./gradlew build
+  artifacts:
+    paths:
+      - Android_test/app/build/outposts/
+  only:
+    changes:
+      - Frontend/**/*
+      
+# test android frontend
+android-test:
+  image: javiersantos/android-ci:latest
+  stage: androidtest
+  tags:
+    - android
+  before_script:
+    - export GRADLE_uSER_HOME='pwd'/.gradle
+    - chmod +x ./Frontend/gradlew    
+  script:
+    - cd Frontend
+    - ./gradlew test
+  only:
+    changes:
+      - Frontend/**/*

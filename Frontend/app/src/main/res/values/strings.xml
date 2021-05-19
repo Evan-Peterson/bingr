@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Bingr</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="e_mail">E-mail:</string>
+    <string name="password">Password:</string>
+    <string name="confirmPassword">Confirm Password:</string>
+    <string name="invalidResponseFormat">A server error occurred.</string>
+    <string name="loginFailure">Failed to login, incorrect email or password.</string>
+    <string name="connectionFailure">Could not connect to server.</string>
+    <string name="registerFailure">Failed to register. Please try again later.</string>
+    <string name="unmatchedPassword">Passwords do not match.</string>
+    <string name="invalidEmail">Please use a valid email address.</string>
+    <string name="shortPassword">Password must be at least 8 characters long</string>
+    <string name="notComplexPassword">Password must include uppercase and lowercase letters, numbers, and symbols.</string>
+    <string name="JSONError">A JSON error occurred</string>
+</resources>
