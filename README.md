@@ -1,5 +1,8 @@
 # bingr
 
+![forthebadge](https://forthebadge.com/images/badges/powered-by-electricity.svg)
+
+
 ## About
 Bingr is a social media app in which users can swipe left or right on a movie and get matched with friends who swiped right on the same movies.  The front end is written for Android and the backend uses Springboot.
 
