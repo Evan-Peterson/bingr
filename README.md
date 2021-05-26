@@ -9,6 +9,9 @@ Bingr is a social media app in which users can swipe left or right on a movie an
 ## Purpose 
 This app was created for COM S 309 at Iowa State University with a team of 3 others.  This app was never intended for general use, but rather for educational purposes only.
 
+## Technologies
+Created using Springboot and Hibernate for the backend and Android Studio and Volley for the front end.
+
 ## Demonstration 
 Full demonstration of the features can be found [here](https://www.youtube.com/watch?v=hD_YFvb-OJk).
 
